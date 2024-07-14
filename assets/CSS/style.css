@@ -16,9 +16,6 @@ body {
     /* Generic project styles*/
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
-
-
-
 }
 
 /* Header*/
@@ -41,6 +38,20 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main Content*/
