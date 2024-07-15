@@ -1,24 +1,24 @@
-/* Google fonts import*/
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
-/*Asterisc wildcard selector to override default styles added by the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General styles*/
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles*/
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
 
-/* Header*/
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -61,12 +61,13 @@ h1 {
 nav {
     position: absolute;
     background-color: #ffffff;
-    padding: 0 1rem;
-    left: 0;
     width: 100%;
+    left: 0;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
+
 }
 
 /* Nav toggle */
@@ -82,12 +83,12 @@ nav {
     font-size: 2rem;
 }
 
-/* Main Content*/
+/* Main Content */
 main {
     /* Make main element take any surplus space to push the footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-  
+
 }
 
 /* Hero section */
@@ -95,10 +96,10 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
-    
+
 }
 
-/* Footer*/
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -114,7 +115,7 @@ main {
 }
 
 
-/* Media query: tablet and larger (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /* Header */
@@ -130,7 +131,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -144,14 +145,16 @@ main {
         margin: 0 0.5rem;
     }
 
-    /* Main Content*/
+    /* Main Content */
     main {
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
+}
 
-    /* Large devices (laptoms and desctops, 992px and up) */
-    @media screen and (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
+/* Large devices (laptops and desctops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
+}
